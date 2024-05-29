@@ -1,0 +1,7 @@
+.background{
+    background-color: rgb(143, 119, 73);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

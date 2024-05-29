@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import styles from './LandingLayout.module.css';
 
 function Landinglayout() {
     return (
       <div>
-        <div >
+        <div className={styles.navbar}>
               <ul >
               <Link to="/"><li><a>Inicio</a></li></Link>
               <Link to="/about"><li><a>about</a></li></Link>

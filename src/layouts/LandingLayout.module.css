@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+   flex-direction: row;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 10px;
+    list-style: none;
+}

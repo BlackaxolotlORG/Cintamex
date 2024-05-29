@@ -9,7 +9,6 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Products from './pages/Products/Products';
-import Catalogue from './pages/Catalogue/Catalogue';
 
 
 
@@ -22,7 +21,6 @@ function App() {
      <Route path="about" element={<About />} />
      <Route path="contact" element={<Contact />} />
       <Route path="products" element={<Products />} />
-      <Route path="catalogue" element={<Catalogue />} />
       </Route>
     </Routes>
     </BrowserRouter>

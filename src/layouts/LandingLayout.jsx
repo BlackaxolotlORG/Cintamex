@@ -11,7 +11,6 @@ function Landinglayout() {
               <Link to="/about"><li><a>about</a></li></Link>
               <Link to="/contact"><li><a>Contact</a></li></Link>
               <Link to="/products"><li><a>Products</a></li></Link>
-              <Link to="/catalogue"><li><a>Catalogue</a></li></Link>
   </ul>
               </div>
         <Outlet /> {/* This will render child routes here */}

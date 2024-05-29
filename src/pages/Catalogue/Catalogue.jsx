@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './Catalogue.module.css';
 function Catalogue() {
   // Function to handle PDF download
   const handleDownload = () => {
@@ -19,9 +19,12 @@ function Catalogue() {
 
   return (
     <>
-      <h1>Catalogue</h1>
+    <div className={styles.download}>
+    <h1>Catalogue</h1>
       <p>Hello world, here is our Catalogue</p>
       <button onClick={handleDownload}>Download PDF</button>
+    </div>
+      
     </>
   );
 }

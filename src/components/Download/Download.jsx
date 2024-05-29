@@ -21,9 +21,9 @@ function Download() {
     return (
       <>
       <div className={styles.download}>
-      <h1>Catalogue</h1>
-        <p>Hello world, here is our Catalogue</p>
-        <button onClick={handleDownload}>Download PDF</button>
+      <h1>Catalogo</h1>
+        <p>Descarga Nuestro catalogo en PDF</p>
+        <button onClick={handleDownload}>Descargar</button>
       </div>
         
       </>

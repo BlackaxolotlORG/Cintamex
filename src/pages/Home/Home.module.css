@@ -1,0 +1,55 @@
+.homepage {
+  font-family: 'Arial, sans-serif';
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #f7f1e3;
+  padding: 50px 0;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.header .shopNowBtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header .shopNowBtn:hover {
+  background-color: #555;
+}
+
+.newCollection {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.newCollection h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+

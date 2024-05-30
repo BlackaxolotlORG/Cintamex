@@ -1,7 +1,80 @@
-.background{
-    background-color: rgb(143, 119, 73);
+
+.background {
+    background-color: #f7f1e3; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333; 
+    text-align: center;
+}
+
+p {
+    color: #666; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+@media (max-width: 600px) { /* @media para hacerla responsiva*/
+    .background {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }

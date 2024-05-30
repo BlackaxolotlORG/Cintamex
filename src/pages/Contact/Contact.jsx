@@ -4,19 +4,19 @@ function Contact() {
     return (
         <div className={styles.background}>
             <div>
-            <h1>Contact</h1>
+            <h1>Contactanos</h1>
              <p> Hello world contact us </p>
             </div>
         
              <div>
                 <form>
-                    <label for="name">Name:</label>
+                    <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name"></input>
-                    <label for="email">Email:</label>
+                    <label for="email">Mail:</label>
                     <input type="text" id="email" name="email"></input>
-                    <label for="message">Message:</label>
+                    <label for="message">Mensaje:</label>
                     <textarea id="message" name="message"></textarea>
-                    <button>Send</button>
+                    <button>Enviar</button>
                 </form>
              </div>
         </div>

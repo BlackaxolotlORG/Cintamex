@@ -9,8 +9,9 @@ function Landinglayout() {
               <ul >
               <Link to="/"><li><a>Inicio</a></li></Link>
               <Link to="/about"><li><a>about</a></li></Link>
-              <Link to="/contact"><li><a>Contact</a></li></Link>
               <Link to="/products"><li><a>Products</a></li></Link>
+              <Link to="/contact"><li><a>Contact</a></li></Link>
+
   </ul>
               </div>
         <Outlet /> {/* This will render child routes here */}

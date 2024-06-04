@@ -1,80 +1,40 @@
+// src/pages/Products/Products.js
+import React from 'react';
 import Download from '../../components/Download/Download';
+import Product from './product.jsx';
 import styles from './Products.module.css';
-function Products() {
+
+const products = [
+    { image: '../../src/assets/7.png', description: 'Product 1 description' },
+    { image: '../../src/assets/7.png', description: 'Product 2 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    { image: '../../src/assets/7.png', description: 'Product 3 description' },
+    
+
+    // Añade más productos aquí
+];
+
+const Products = () => {
     return (
         <>
-             <h1>Products</h1>
-             <p> Hello world here are our products </p>
-            
-             <div className={styles.products}>
-             <div className={styles.product}>
-                Product one
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             </div>
-             <div className={styles.product}>
-                Product two
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             </div>
-             <div className={styles.product}>
-                Product three
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             
-             </div>
-             <div className={styles.product}>
-                Product four
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-            
-             </div>
-             <div className={styles.product}>
-                Product one
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             </div>
-             <div className={styles.product}>
-                Product two
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             </div>
-             <div className={styles.product}>
-                Product three
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-             
-             </div>
-             <div className={styles.product}>
-                Product four
-                <p>
-                    Product description
-                </p>
-                <button>Buy</button>
-            
-             </div>
-             </div>
-             <Download />
-
-         
+            <h1>Productos</h1>
+            <p>Hello world here are our products</p>
+            <div className={styles.products}>
+                {products.map((product, index) => (
+                    <Product 
+                        key={index} 
+                        image={product.image} 
+                        description={product.description} 
+                    />
+                ))}
+            </div>
+            <Download />
         </>
+    );
+}
 
-    )
-  }
-  
-  export default Products
-  
+export default Products;

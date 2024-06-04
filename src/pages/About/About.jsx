@@ -24,10 +24,10 @@ function About() {
                     </p>
                 </div>
                 <div className={styles.photo}>
-                    <img src="../assets/1.jpg" alt="Placeholder" />
+                    <img src="../../src/assets/7.png" alt="Placeholder" />
                 </div>
                 <div className={styles.photo}>
-                    <img src="https://via.placeholder.com/600x400" alt="Placeholder" />
+                    <img src="../../src/assets/4.jpg" alt="Placeholder" />
                 </div>
                 <div className={styles.infobox}>
                     <h2>Nuestra visión</h2>
@@ -47,7 +47,7 @@ function About() {
                     </p>
                 </div>
                 <div className={styles.photo}>
-                    <img src="https://via.placeholder.com/600x400" alt="Placeholder" />
+                    <img src="../../src/assets/6.png" alt="Placeholder" />
                 </div>
             </div>
         </div>

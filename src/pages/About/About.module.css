@@ -14,9 +14,8 @@
 h1 {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #2c3e50;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial Black', Gadget, sans-serif;
+    
 }
 
 .mainparagraph {

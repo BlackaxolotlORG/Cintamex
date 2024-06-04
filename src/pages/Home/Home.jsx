@@ -16,6 +16,11 @@ function Home() {
         
       </div>
       <Download />
+      <div className={styles.newCollection}>
+        <h2>Quienes Somos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper eros eget tincidunt ultrices.</p>
+        
+      </div>
     </div>
   );
 }

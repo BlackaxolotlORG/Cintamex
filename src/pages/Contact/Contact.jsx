@@ -16,19 +16,19 @@ function Contact() {
         <div className={styles.columns1}>
         <img src="../../src/assets/Ubi.png" alt="Ubicacion" />
         <h2>Ubicacion</h2>
-        {/* <h3>alle Los Remedios num.11 Col. San Luis Tlatilco Naucalpan de Juarez 53630</h3>*/}
+        <h3>Calle Los Remedios num.11 Col. San Luis Tlatilco Naucalpan de Juarez 53630</h3>
         </div>
 
         <div className={styles.columns1}>
         <img src="../../src/assets/Telefono.png" alt="Telefono" />
         <h2>Telefono</h2>
-        {/*<h3> + 52 5585567960</h3> */} 
+        <h3> + 52 5585567960</h3>
         </div>
 
         <div className={styles.columns1}>
         <img src="../../src/assets/Mail.png" alt="Mail" />
         <h2>Mail</h2>
-        {/*<h3>EDUARDOREZNIK@CINTAMEX.COM.MX</h3> */} 
+        <h3>EDUARDOREZNIK@CINTAMEX.COM.MX</h3>
         </div>
 
         </div>

@@ -1,3 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.link {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit color from parent element */
+  }

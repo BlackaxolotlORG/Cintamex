@@ -1,19 +1,17 @@
 .homepage {
-  font-family: 'Arial, sans-serif';
   color: #333;
   text-align: center;
   padding: 20px;
 }
 
 .header {
-  background-color: #f7f1e3;
   padding: 50px 0;
   position: relative;
 }
 
 .header h1 {
   font-size: 48px;
-  color: #333;
+  color: #003834;
   margin-bottom: 10px;
   text-align: left;
   margin-left: 15px;
@@ -21,14 +19,14 @@
 
 .header p {
   font-size: 18px;
-  color: #555;
+  color: #003834;
   margin-bottom: 30px;
   text-align: left;
   margin-left: 15px;
 }
 
 .header .shopNowBtn {
-  background-color: #333;
+  background-color: #2FB2AF;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -52,4 +50,19 @@
   margin-bottom: 20px;
 }
 
+.newproducts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 16px; /* Space between grid items */
+  padding: 16px; /* Optional padding around the grid */
+}
+.newproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.view{
+  margin-top: 10px;
+  width: 30%
+}

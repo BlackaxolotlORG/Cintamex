@@ -27,7 +27,8 @@
   }
 
   .contactanos{
-    background-color: gray;
+    background-color:  #003834;
+    color: white;
   }
 
   .columns{
@@ -42,9 +43,9 @@
 
 
   .contactus{
-    background-color: gray; 
+    background-color: #003834;
     margin: auto;
-    margin-top: 20px
+    padding-top: 20px;
 
   }
 
@@ -107,7 +108,7 @@
   }
   
   button {
-    background-color: #007BFF; 
+    background-color: #2FB2AF;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -118,7 +119,7 @@
   }
   
   button:hover {
-    background-color: #0056b3; 
+    background-color: #2FB2AF;
   }
   
   @media (max-width: 600px) { /* @media para hacerla responsiva*/

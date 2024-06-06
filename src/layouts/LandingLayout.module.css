@@ -1,9 +1,32 @@
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
 .navbar ul{
     display: flex;
    flex-direction: row;
+   color: #003834;
+}
+.navlink{
+    color: #003834;
 }
 .navbar a{
     text-decoration: none;
     margin: 10px;
     list-style: none;
 }
+
+.logonav{
+    height: 50px;
+}
+
+.link {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit color from parent element */
+  }
+
+  .footer{
+    background-color: #003834;
+    color: aliceblue;
+  }

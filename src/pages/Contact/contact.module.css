@@ -162,3 +162,10 @@ form {
   gap: 16px; /* Space between grid items */
   padding: 16px; /* Optional padding around the grid */
 }
+
+.HeadContact{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

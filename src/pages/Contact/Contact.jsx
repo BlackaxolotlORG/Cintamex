@@ -37,7 +37,7 @@ function Contact() {
             <div>
             
             </div>
-            <div>
+            <div className={styles.HeadContact}>
             <h1>Mandanos Un Mensaje</h1>
             
             </div>
@@ -55,9 +55,9 @@ function Contact() {
     </div>
              <div className={styles.contactform}>
                 <form>
-                    <label for="name">Nombre:</label>
+                    <label for="name">Tu Nombre:</label>
                     <input type="text" id="name" name="name"></input>
-                    <label for="email">Mail:</label>
+                    <label for="email">Tu Mail:</label>
                     <input type="text" id="email" name="email"></input>
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message"></textarea>
@@ -67,7 +67,7 @@ function Contact() {
 
                     <div className={styles.socialMedia}>
                 <a href="https://www.linkedin.com/in/eduardo-reznik-0941a2170/" target="_blank" rel="noopener noreferrer">
-                <img src="../../src/assets/Linkedin.png" alt="Linkedin" />
+                <i className="fa-brands fa-linkedin"></i>
                 </a>
 
                 <a href="https://wa.me/525585567950" target="_blank" rel="noopener noreferrer">

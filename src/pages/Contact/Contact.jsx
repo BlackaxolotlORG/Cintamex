@@ -67,7 +67,7 @@ function Contact() {
 
                     <div className={styles.socialMedia}>
                 <a href="https://www.linkedin.com/in/eduardo-reznik-0941a2170/" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-linkedin"></i>
+                <img src="../../src/assets/Linkedin.png" alt="linkedin" />
                 </a>
 
                 <a href="https://wa.me/525585567950" target="_blank" rel="noopener noreferrer">

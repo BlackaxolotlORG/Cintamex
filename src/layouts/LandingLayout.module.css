@@ -25,13 +25,20 @@
   width: auto;
 }
 
+
 .footer {
   background-color: #003834;
   color: #fff;
+  padding: 50px 0;
+
+}
+.footerContent {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  
 }
 
 .footerSection {
@@ -41,6 +48,7 @@
 }
 
 .footerSection h3 {
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -62,6 +70,7 @@
   color: white;
   text-decoration: none;
   text-align: left;
+  margin: 0;
 }
 
 .footerSection a:hover {
@@ -82,7 +91,7 @@
 }
 
 .footerImage img {
-  max-width: 300px; 
+  max-width: 300px;
   height: auto;
 }
 
@@ -97,5 +106,5 @@
   height: auto;
   margin: 0 10px;
   margin-top: 5px;
-  
+
 }

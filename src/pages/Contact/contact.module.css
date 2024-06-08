@@ -1,143 +1,134 @@
 .background {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.columns h2{
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
+.columns p{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
+.columns img {
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: 0;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.contactanos {
+  background-color: #003834;
+  color: white;
+  padding-top: 50px;
+}
+
+
+.contactus {
+  background-color: #003834;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.contactus h1 {
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia img {
+  width: 40px;
+  height: auto;
+}
+
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  background-color: #2FB2AF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #2FB2AF;
+}
+
+@media (max-width: 600px) {
+
+  /* @media para hacerla responsiva*/
+  .background {
+    padding: 15px;
   }
 
-  .columns1{
-    margin-top: 10px;
-    text-align: center;
-  }
 
-  .columns1 h2{
-    color: white;
-    text-align: center;
-    
-  }
-
-  .columns1 img{
-    width: 100px;
-    height: auto;
-    display: flex;
-    margin: auto;
-   
-  }
-
-  .contactanos{
-    background-color:  #003834;
-    color: white;
-  }
-
-  .columns{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-    gap: 16px; /* Space between grid items */
-  padding: 16px; /* Optional padding around the grid */
-    justify-content: space-between;
-    margin: 200px;
-    margin-top: 50px;
-  }
-
-
-  .contactus{
-    background-color: #003834;
-    margin: auto;
-    padding-top: 20px;
-
-  }
-
-  .contactus h1 {
-    margin: auto;
-    color: white;
-    text-align: center;
-  }
-  
-  .socialMedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .socialMedia img {
-    width: 40px;
-    height: auto;
-    margin: 0 10px;
-    margin-top: 5px;
-    
-  }
-  
-  h1 {
-    color: #333; 
-    text-align: left;
-    
-  }
-  
-  p {
-    color: #666; 
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
   input[type="text"],
   textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
-  
-  textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  button {
-    background-color: #2FB2AF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  button:hover {
-    background-color: #2FB2AF;
-  }
-  
-  @media (max-width: 600px) { /* @media para hacerla responsiva*/
-    .background {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  
 
-    input[type="text"],
-    textarea {
-      font-size: 14px;
-    }
-  
-    button {
-      font-size: 14px;
-      padding: 8px 12px;
-    }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
   }
+}
 
 
 
@@ -148,22 +139,29 @@ form {
   gap: 20px;
 }
 
-.map{
+.map {
   flex: 1;
   margin: 20px;
 }
-.contactform{
+
+.contactform {
   flex: 1;
- 
-}
-.formcontent{
-  display: flex;
-  flex-direction: row;
-  gap: 16px; /* Space between grid items */
-  padding: 16px; /* Optional padding around the grid */
+
 }
 
-.HeadContact{
+.formcontent {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.HeadContact h2{
+  font-size: 30px;
+  color: #003834;
+}
+.HeadContact {
   text-align: center;
   display: flex;
   align-items: center;

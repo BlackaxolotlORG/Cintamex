@@ -33,7 +33,6 @@ const Products = () => {
     return (
         <>
             <h1>Productos</h1>
-            <p>Hello world here are our products</p>
             <div className={styles.products}>
                 {products.map((product, index) => (
                     <Product 

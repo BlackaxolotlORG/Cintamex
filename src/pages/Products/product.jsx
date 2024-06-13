@@ -7,7 +7,7 @@ const Product = ({ image, description }) => {
         <div className={styles.product}>
             <img src={image} alt="Product" />
             <p>{description}</p>
-            <button>Buy</button>
+            <button>View</button>
         </div>
     );
 }

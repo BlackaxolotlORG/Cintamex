@@ -12,12 +12,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 700px;
 }
 
 .navlink {
   color: #003834;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 60px;
 }
 
 .logonav {

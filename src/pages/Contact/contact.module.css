@@ -114,10 +114,11 @@
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   
   button:hover {
-    background-color: #2FB2AF;
+    background-color: #3b8685;
   }
   
   @media (max-width: 600px) { /* @media para hacerla responsiva*/
@@ -164,7 +165,8 @@ form {
   display: flex;
   flex-direction: row;
   gap: 16px; /* Space between grid items */
-  padding: 16px; /* Optional padding around the grid */
+  padding: 30px; /* Optional padding around the grid */
+  padding-bottom: 80px;
 }
 
 .HeadContact{

@@ -24,12 +24,13 @@ function Contact() {
         <h2>Telefono</h2>
         <h3> + 52 5585567960</h3>
         </div>
-
+        
         <div className={styles.columns1}>
         <img src="../../src/assets/Mail.png" alt="Mail" />
         <h2>Mail</h2>
         <h3>EDUARDOREZNIK@CINTAMEX.COM.MX</h3>
         </div>
+
 
         </div>
 

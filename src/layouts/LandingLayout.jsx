@@ -62,7 +62,9 @@ function LandingLayout() {
         </div>
         <div className={styles.footerSection}>
           <h3>Ubicación</h3>
-          <p>Calle Los Remedios num.11 Col. San Luis Tlatilco Naucalpan de Juarez 53630</p>
+          <a href="https://maps.app.goo.gl/fhj1Unc4bfZC38316" target="_blank" rel="noopener noreferrer">
+          Calle Los Remedios num.11 Col. San Luis Tlatilco Naucalpan de Juarez 53630
+          </a>
         </div>
       </div>
     </div>

@@ -11,6 +11,8 @@
   .columns1{
     margin-top: 10px;
     text-align: center;
+    border: #ccc solid 1px;
+    cursor: pointer;
   }
 
   .columns1 h2{
@@ -150,7 +152,9 @@ form {
 
 .map{
   flex: 1;
-  margin: 20px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .contactform{
   flex: 1;

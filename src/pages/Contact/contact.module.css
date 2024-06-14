@@ -10,8 +10,9 @@
 
   .columns1{
     margin-top: 10px;
+    padding-top: 20px;
     text-align: center;
-    border: #ccc solid 1px;
+    box-shadow: 0 4px 8px rgba(247, 246, 246, 0.274);
     cursor: pointer;
   }
 

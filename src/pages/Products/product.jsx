@@ -1,13 +1,15 @@
-// src/components/Product/Product.js
-import React from 'react';
 import styles from './Products.module.css';
 
 const Product = ({ image, description }) => {
     return (
         <div className={styles.product}>
-            <img src={image} alt="Product" />
-            <p>{description}</p>
-            <button>View</button>
+            <div className={styles.image}>
+                <img src={image} alt="Product" />
+            </div>
+            <div className={styles.info}>
+                <p>{description}</p>
+                <button className={styles.view}>Detalles</button>
+            </div>
         </div>
     );
 }

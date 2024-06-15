@@ -31,7 +31,7 @@ const Footer = () => {
                     <p>
                         Correo:{" "}
                         <a href="mailto:dania.montesdeoca@vpcapital.mx">
-                            EDUARDOREZNIK@CINTAMEX.COM.MX
+                            eduardoreznik@cintamex.com.mx
                         </a>
                     </p>
                     <p>

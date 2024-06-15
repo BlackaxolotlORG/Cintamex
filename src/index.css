@@ -1,7 +1,32 @@
+:root{
+    --aqua: #2DB2AD;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
-.link {
-    text-decoration: none; /* Remove default link underline */
-    color: inherit; /* Inherit color from parent element */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.8rem;
+    height: 100vh;
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
   }
+  
+.link {
+    text-decoration: none;
+    color: inherit;
+}

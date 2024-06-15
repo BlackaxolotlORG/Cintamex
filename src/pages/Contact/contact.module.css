@@ -1,178 +1,126 @@
-.background {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .columns1{
-    margin-top: 10px;
-    padding-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(247, 246, 246, 0.274);
-    cursor: pointer;
-  }
-
-  .columns1 h2{
-    color: white;
-    text-align: center;
-    
-  }
-
-  .columns1 img{
-    width: 100px;
-    height: auto;
-    display: flex;
-    margin: auto;
-   
-  }
-
-  .contactanos{
-    background-color:  #003834;
-    color: white;
-  }
-
-  .columns{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-    gap: 16px; /* Space between grid items */
-  padding: 16px; /* Optional padding around the grid */
-    justify-content: space-between;
-    margin: 200px;
-    margin-top: 50px;
-  }
-
-
-  .contactus{
-    background-color: #003834;
-    margin: auto;
-    padding-top: 20px;
-
-  }
-
-  .contactus h1 {
-    margin: auto;
-    color: white;
-    text-align: center;
-  }
-  
-  .socialMedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .socialMedia img {
-    width: 40px;
-    height: auto;
-    margin: 0 10px;
-    margin-top: 5px;
-    
-  }
-  
-  h1 {
-    color: #333; 
-    text-align: left;
-    
-  }
-  
-  p {
-    color: #666; 
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  input[type="text"],
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  button {
-    background-color: #2FB2AF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  button:hover {
-    background-color: #3b8685;
-  }
-  
-  @media (max-width: 600px) { /* @media para hacerla responsiva*/
-    .background {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  
-
-    input[type="text"],
-    textarea {
-      font-size: 14px;
-    }
-  
-    button {
-      font-size: 14px;
-      padding: 8px 12px;
-    }
-  }
-
-
-
-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.contactanos {
+  background-color: #003834;
+  color: white;
+  padding: 8rem 0;
+}
+.contactus{
+  color: white;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0;
 }
 
-.map{
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 3rem 0 10rem 0;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.column {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(247, 246, 246, 0.274);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem 0;
+}
+.column img {
+  width: 100px;
+  height: auto;
+}
+.column h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+.column p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+
+.background {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.HeadContact {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.formcontent {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.map {
   flex: 1;
-  margin: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
 }
 .contactform{
   flex: 1;
- 
-}
-.formcontent{
   display: flex;
-  flex-direction: row;
-  gap: 16px; /* Space between grid items */
-  padding: 30px; /* Optional padding around the grid */
-  padding-bottom: 80px;
+  flex-direction: column;
+  gap: 2rem;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+.field input[type="text"],
+.field textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.field textarea {
+  resize: vertical;
+  height: 100px;
+}
+.submit-btn {
+  background-color: #2FB2AF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.submit-btn:hover {
+  background-color: #3b8685;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.HeadContact{
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.socialMedia img {
+  width: 3.5rem;
+  height: auto;
 }

@@ -1,5 +1,7 @@
 import styles from "./Contact.module.css";
 
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
+
 function Contact() {
     return (
         <>
@@ -7,7 +9,9 @@ function Contact() {
                 <h1 className={styles.contactus}>Contáctanos</h1>
                 <div className={styles.columns}>
                     <div className={styles.column}>
-                        <img src="../../src/assets/Ubi.png" alt="Ubicacion" />
+                        <div className={styles.icon}>
+                            <i className="fa-solid fa-location-dot"></i>
+                        </div>
                         <h2>Ubicacion</h2>
                         <p>
                             Calle Los Remedios num.11 Col. San Luis Tlatilco
@@ -16,16 +20,17 @@ function Contact() {
                     </div>
 
                     <div className={styles.column}>
-                        <img
-                            src="../../src/assets/Telefono.png"
-                            alt="Telefono"
-                        />
+                        <div className={styles.icon}>
+                            <i className="fa-solid fa-phone"></i>
+                        </div>
                         <h2>Telefono</h2>
-                        <p> + 52 5585567960</p>
+                        <p>+52 55 8556 7960</p>
                     </div>
 
                     <div className={styles.column}>
-                        <img src="../../src/assets/Mail.png" alt="Mail" />
+                        <div className={styles.icon}>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                         <h2>Mail</h2>
                         <p>eduardoreznik@cintamex.com.mx</p>
                     </div>
@@ -61,40 +66,7 @@ function Contact() {
 
                           <button className={styles["submit-btn"]}>Enviar</button>
 
-                          <div className={styles.socialMedia}>
-                              <a
-                                  href="https://www.linkedin.com/in/eduardo-reznik-0941a2170/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                              >
-                                  <img
-                                      src="../../src/assets/Linkedin.png"
-                                      alt="linkedin"
-                                  />
-                              </a>
-
-                              <a
-                                  href="https://wa.me/525585567950"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                              >
-                                  <img
-                                      src="../../src/assets/Whatsapp.png"
-                                      alt="Whatsapp"
-                                  />
-                              </a>
-
-                              <a
-                                  href="https://www.instagram.com/empaques.cintamex/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                              >
-                                  <img
-                                      src="../../src/assets/Instagram.png"
-                                      alt="Instagram"
-                                  />
-                              </a>
-                          </div>
+                          <SocialMedia />
                       </form>
                 </div>
             </div>

@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.jpeg";
 import styles from "./Footer.module.css";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <div className={styles.footer}>
             <div className={styles["footer-content"]}>
@@ -12,16 +21,16 @@ const Footer = () => {
                 <div className={styles.footerSection}>
                     <h3>Menú</h3>
                     <ul>
-                        <Link className={styles.navlinkfoot} to="/">
+                        <Link className={styles.navlinkfoot} to="/" onClick={scrollToTop}>
                             <li>Inicio</li>
                         </Link>
-                        <Link className={styles.navlinkfoot} to="/about">
+                        <Link className={styles.navlinkfoot} to="/about" onClick={scrollToTop}>
                             <li>Nosotros</li>
                         </Link>
-                        <Link className={styles.navlinkfoot} to="/products">
+                        <Link className={styles.navlinkfoot} to="/products" onClick={scrollToTop}>
                             <li>Productos</li>
                         </Link>
-                        <Link className={styles.navlinkfoot} to="/contact">
+                        <Link className={styles.navlinkfoot} to="/contact" onClick={scrollToTop}>
                             <li>Contacto</li>
                         </Link>
                     </ul>
@@ -30,7 +39,7 @@ const Footer = () => {
                     <h3>Contacto</h3>
                     <p>
                         Correo:{" "}
-                        <a href="mailto:dania.montesdeoca@vpcapital.mx">
+                        <a href="mailto:">
                             eduardoreznik@cintamex.com.mx
                         </a>
                     </p>
@@ -38,40 +47,9 @@ const Footer = () => {
                         Teléfono:{" "}
                         <a href="tel:+525543903252">(+52) 55 8556 7960</a>
                     </p>
-                    <div className={styles.socialMedia}>
-                        <a
-                            href="https://www.linkedin.com/in/eduardo-reznik-0941a2170/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                src="../../src/assets/Linkedin.png"
-                                alt="linkedin"
-                            />
-                        </a>
-
-                        <a
-                            href="https://wa.me/525585567950"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                src="../../src/assets/Whatsapp.png"
-                                alt="Whatsapp"
-                            />
-                        </a>
-
-                        <a
-                            href="https://www.instagram.com/empaques.cintamex/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                src="../../src/assets/Instagram.png"
-                                alt="Instagram"
-                            />
-                        </a>
-                    </div>
+                    <SocialMedia 
+                        footer={true}
+                    />
                 </div>
                 <div className={styles.footerSection}>
                     <h3>Ubicación</h3>

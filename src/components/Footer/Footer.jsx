@@ -63,6 +63,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
+            <p className={styles.rights}>Todos los derechos reservados. Cintamex&#169;</p>
         </div>
     );
 };

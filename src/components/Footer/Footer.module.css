@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--dark-aqua);
@@ -50,4 +51,9 @@
 
 .footerSection a:hover {
     color: var(--aqua);
+}
+.rights{
+    color: var(--white);
+    margin: 1rem 0 2rem 0;
+    font-size: 1.4rem;
 }

@@ -62,10 +62,11 @@
 .mainparagraph,
 .paragraph {
     font-size: 1.8rem;
-    color: #555;
     line-height: 1.6;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 2;
     /* background-color: var(--aqua);
     color: var(--white);
     padding: 4rem 0; */

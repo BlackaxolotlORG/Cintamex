@@ -5,8 +5,9 @@ import styles from "./Home.module.css";
 import Download from "../../components/Download/Download";
 
 import Product from "../Products/Product";
+import Image from "../../components/ImageGallery/Image";
 
-import { products } from "../../data/data";
+import { products, galery } from "../../data/data";
 
 function Home() {
   const newProducts = products.slice(0, 3);
@@ -15,7 +16,7 @@ function Home() {
             <header className={styles.header}>
                 <div className={styles.info}>
                     <div className={styles.text}>
-                        <h1>Cintamex, pega al ritmo de México </h1>
+                        <h1>Cintamex, ¡Pega al ritmo de México!</h1>
                         <p>
                             Cintamex es una empresa 100 % mexicana que se especializa en
                             la distribución de productos de empaque. Su principal
@@ -51,20 +52,10 @@ function Home() {
                 </div>
             </div>
             <Download />
-            <div>
-                <h2>Nuestros Valores</h2>
-            </div>
-            <div className={styles.newCollection}>
-                <h2>Nuestra Vision</h2>
-                <p>
-                    Ser reconocidos como el líder indiscutible en la
-                    distribución de productos de empaque en México, expandiendo
-                    nuestra presencia a mercados internacionales y estableciendo
-                    estándares de excelencia en servicio al cliente. Aspiramos a
-                    ser pioneros en la adopción de prácticas sostenibles en
-                    nuestra industria, contribuyendo activamente a la economía
-                    circular y al bienestar de nuestras comunidades.
-                </p>
+            <div className={styles.images}>
+                  {galery.map((image, i) => (
+                      <Image key={i} image={image} />
+                  ))}
             </div>
         </div>
     );

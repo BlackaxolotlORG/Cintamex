@@ -1,17 +1,16 @@
 .homepage {
   color: #333;
   text-align: center;
-  padding: 6rem 0;
 }
 
 .header {
   position: relative;
-  padding: 10rem 10rem 17rem 10rem;
+  padding: 16rem 10rem 20rem 10rem;
 
   background-image: url('../../assets/fondo.webp');
   
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
 
   /* display: flex;
@@ -20,7 +19,7 @@
 }
 
 .header::before{
-  /* background-color: rgba(0, 0, 0, .1); */
+  background-color: rgba(0, 0, 0, .2);
   /* background: inherit;
   filter: blur(3px); */
   position: absolute;
@@ -50,7 +49,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  width: 40%;
+  width: 50%;
 }
 
 .text h1 {
@@ -108,4 +107,13 @@
 .view {
   margin-top: 10px;
   width: 30%
+}
+
+.images{
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  padding: 10rem 0;
 }

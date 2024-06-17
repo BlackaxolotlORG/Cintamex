@@ -2,10 +2,13 @@
     --aqua: #2DB2AD;
     --white: #FEFCF9;
     --blue: #2878D9;
+    --dark-aqua: #003834;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: var(--dark-aqua);
+    background-color: var(--white);
 }
 html {
     font-size: 62.5%;

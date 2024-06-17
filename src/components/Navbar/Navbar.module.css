@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 5rem;
-  background-color: var(--white);
+  background-color: var(--dark-aqua);
   z-index: 1000;
   position: fixed;
   width: 100%;
@@ -34,7 +34,7 @@
 }
 
 .navlink {
-  color: #003834;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -47,6 +47,7 @@
 .logonav img {
   height: auto;
   width: 100%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(280deg) brightness(101%) contrast(105%);
 }
 .active {
   color: var(--aqua);

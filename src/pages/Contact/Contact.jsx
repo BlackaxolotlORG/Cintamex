@@ -29,7 +29,7 @@ function Contact() {
 
                     <div className={styles.column}>
                         <div className={styles.icon}>
-                            <i class="fa-solid fa-envelope"></i>
+                            <i className="fa-solid fa-envelope"></i>
                         </div>
                         <h2>Mail</h2>
                         <p>eduardoreznik@cintamex.com.mx</p>

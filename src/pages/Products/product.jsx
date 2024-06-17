@@ -1,32 +1,100 @@
-import styles from './Products.module.css';
+import { useEffect, useState, useRef } from "react";
+import styles from "./Products.module.css";
 
 const Product = ({ product }) => {
-    const { image, name, description, weight, thickness, width, type, pieces } = product;
+    const {
+        image,
+        name,
+        description,
+        weight,
+        thickness,
+        width,
+        type,
+        pieces,
+        short,
+    } = product;
+
+    const [isVisible, setIsVisible] = useState(false);
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(elementRef.current); // Deja de observar una vez que es visible
+                }
+            },
+            {
+                threshold: 0.1,
+                root: null, // `null` significa que se utiliza el viewport del navegador como root
+                rootMargin: "0px 0px -250px 0px",
+            }
+        );
+
+        if (elementRef.current) {
+            observer.observe(elementRef.current);
+        }
+
+        return () => {
+            if (elementRef.current) {
+                observer.unobserve(elementRef.current);
+            }
+        };
+    }, []);
 
     return (
-        <div className={styles.product}>
+        <div
+            ref={elementRef}
+            className={`${styles.product} ${isVisible ? styles.animate : ""}`}
+        >
             <div className={styles.image}>
                 <img src={image} alt="Product" />
             </div>
             <div className={styles.description}>
-                <h3>{name}</h3>
                 <div className={styles.info}>
-                    {description && <p className={styles["description-p"]}><span>{description}</span></p>}
-                    {pieces && <p>Piezas: <span>{pieces}</span></p>}
-                    {thickness && <p>Grosor: <span>{thickness}</span></p>}
-                    {width && <p>Ancho: <span>{width}</span></p>}
-                    {type && <p><span>{type}</span></p>}
-                    {weight && <p>Peso: <span>{weight}</span></p>}
-                    
+                    <h3>{name}</h3>
+                    {description && (
+                        <p className={styles["description-p"]}>
+                            <span>{description}</span>
+                        </p>
+                    )}
+                    {pieces && (
+                        <p>
+                            Piezas: <span>{pieces}</span>
+                        </p>
+                    )}
+                    {thickness && (
+                        <p>
+                            Grosor: <span>{thickness}</span>
+                        </p>
+                    )}
+                    {width && (
+                        <p>
+                            Ancho: <span>{width}</span>
+                        </p>
+                    )}
+                    {weight && (
+                        <p>
+                            Peso: <span>{weight}</span>
+                        </p>
+                    )}
                 </div>
-                {/* <div className={styles.view}>
-                    <button>
-                        Ver más
-                    </button>
-                </div> */}
+                <div className={styles["info-left"]}>
+                    {type && (
+                        <p>
+                            <span>{type}</span>
+                        </p>
+                    )}
+                    {short && (
+                        <p>
+                            <span>{short}</span>
+                        </p>
+                    )}
+                </div>
             </div>
         </div>
     );
-}
+};
 
 export default Product;

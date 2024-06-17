@@ -1,0 +1,22 @@
+.image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+
+    border: 1px solid var(--aqua);
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}

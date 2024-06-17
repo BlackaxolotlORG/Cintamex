@@ -26,10 +26,17 @@ const Navbar = () => {
     }
     , [lastScroll]);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.logonav}>
-                <Link className={styles.navlink} to="/">
+                <Link className={styles.navlink} to="/" onClick={scrollToTop}>
                     <img src={Logo} alt="Logo" />
                 </Link>
             </div>
@@ -39,6 +46,7 @@ const Navbar = () => {
                         location.pathname === "/" ? styles.active : ""
                     }`}
                     to="/"
+                    onClick={scrollToTop}
                 >
                     <li>Inicio</li>
                 </Link>
@@ -47,6 +55,7 @@ const Navbar = () => {
                         location.pathname === "/about" ? styles.active : ""
                     }`}
                     to="/about"
+                    onClick={scrollToTop}
                 >
                     <li>Nosotros</li>
                 </Link>
@@ -55,6 +64,7 @@ const Navbar = () => {
                         location.pathname === "/products" ? styles.active : ""
                     }`}
                     to="/products"
+                    onClick={scrollToTop}
                 >
                     <li>Productos</li>
                 </Link>
@@ -63,6 +73,7 @@ const Navbar = () => {
                         location.pathname === "/contact" ? styles.active : ""
                     }`}
                     to="/contact"
+                    onClick={scrollToTop}
                 >
                     <li>Contacto</li>
                 </Link>

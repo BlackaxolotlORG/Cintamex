@@ -40,12 +40,12 @@ const Footer = () => {
                     <p>
                         Correo:{" "}
                         <a href="mailto:">
-                            eduardoreznik@cintamex.com.mx
+                            info@cintamex.com.mx
                         </a>
                     </p>
                     <p>
                         Teléfono:{" "}
-                        <a href="tel:+525543903252">(+52) 55 8556 7960</a>
+                        <a href="tel:+525543903252">(+52) 55 8556 7950</a>
                     </p>
                     <SocialMedia 
                         footer={true}

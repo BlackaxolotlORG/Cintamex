@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import Logo from "../../assets/Logo.png";
 
 const Navbar = () => {
     const location = useLocation();
@@ -44,7 +43,11 @@ const Navbar = () => {
             <div className={styles.logonav}>
                 <div className={styles.logo}>
                     <Link className={styles.navlink} to="/" onClick={scrollToTop}>
-                        <img src={Logo} alt="Logo" />
+                        <picture>
+                            <source srcset="/img/Logo_sin_fondo.avif" type="image/avif" />
+                            <source srcset="/img/Logo_sin_fondo.webp" type="image/webp" />
+                            <img src="/img/Logo_sin_fondo.png" alt="Logo Cintamex" loading="lazy" width="200" height="300" />
+                        </picture>
                     </Link>
                 </div>
                 <div className={styles.menu} onClick={toggleMenu}>

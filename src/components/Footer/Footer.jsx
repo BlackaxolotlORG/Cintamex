@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo.jpeg";
 import styles from "./Footer.module.css";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
@@ -16,7 +15,11 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles["footer-content"]}>
                 <div className={styles.footerImage}>
-                    <img src={Logo} alt="Footer Image" />
+                        <picture>
+                            <source srcset="/img/Logo.avif" type="image/avif" />
+                            <source srcset="/img/Logo.webp" type="image/webp" />
+                            <img src="/img/Logo.png" alt="Logo Cintamex" loading="lazy" width="200" height="300" />
+                        </picture>
                 </div>
                 <div className={styles.footerSection}>
                     <h3>Menú</h3>

@@ -27,6 +27,11 @@ img {
     width: 100%;
     height: auto;
 }
+picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar in WebKit browsers */
   }

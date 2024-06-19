@@ -7,15 +7,11 @@
   position: relative;
   padding: 10rem 3rem;
 
-  background-image: url('../../assets/fondo.webp');
+  background-image: url('/img/fondo.webp');
   
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-
-  /* display: flex;
-  align-items: center; */
-
 }
 @media (min-width: 768px) {
   .header {

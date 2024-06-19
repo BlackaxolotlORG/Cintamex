@@ -49,7 +49,11 @@ const Product = ({ product }) => {
             className={`${styles.product} ${isVisible ? styles.animate : ""}`}
         >
             <div className={styles.image}>
-                <img src={image} alt="Product" />
+                <picture>
+                    <source srcset={`/img/${image}.avif`} type="image/avif" />
+                    <source srcset={`/img/${image}.webp`} type="image/webp" />
+                    <img src={`/img/${image}.png`} alt={`Product ${name}`} loading="lazy" width="200" height="300" />
+                </picture>
             </div>
             <div className={styles.description}>
                 <div className={styles.info}>

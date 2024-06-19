@@ -11,7 +11,7 @@
 
 
   /* background-color: #f5f5f5; */
-  background-image: url('../../assets/fondo_2.webp');
+  background-image: url('/img/fondo_2.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -81,6 +81,11 @@
   justify-content: space-between;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .logonav {
+    width: auto;
+  }
+}
 .logo {
   width: 12rem;
 }

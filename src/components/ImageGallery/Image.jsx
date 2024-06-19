@@ -37,7 +37,11 @@ const Image = ({image}) => {
             ref={elementRef}
             className={`${styles.image} ${isVisible ? styles.animate : ""}`}
         >
-            <img src={image.image}  alt={image.alt} />
+            <picture>
+                <source srcset={`/img/${image.image}.avif`} type="image/avif" />
+                <source srcset={`/img/${image.image}.webp`} type="image/webp" />
+                <img src={`/img/${image.image}.png`} alt={image.alt} loading="lazy" width="200" height="300" />
+            </picture>
         </div>
     )
 }

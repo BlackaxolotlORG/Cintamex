@@ -44,8 +44,8 @@ const Navbar = () => {
                 <div className={styles.logo}>
                     <Link className={styles.navlink} to="/" onClick={scrollToTop}>
                         <picture>
-                            <source srcset="/img/Logo_sin_fondo.avif" type="image/avif" />
-                            <source srcset="/img/Logo_sin_fondo.webp" type="image/webp" />
+                            <source srcSet="/img/Logo_sin_fondo.avif" type="image/avif" />
+                            <source srcSet="/img/Logo_sin_fondo.webp" type="image/webp" />
                             <img src="/img/Logo_sin_fondo.png" alt="Logo Cintamex" loading="lazy" width="200" height="300" />
                         </picture>
                     </Link>

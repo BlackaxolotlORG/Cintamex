@@ -16,8 +16,8 @@ const Footer = () => {
             <div className={styles["footer-content"]}>
                 <div className={styles.footerImage}>
                         <picture>
-                            <source srcset="/img/Logo.avif" type="image/avif" />
-                            <source srcset="/img/Logo.webp" type="image/webp" />
+                            <source srcSet="/img/Logo.avif" type="image/avif" />
+                            <source srcSet="/img/Logo.webp" type="image/webp" />
                             <img src="/img/Logo.png" alt="Logo Cintamex" loading="lazy" width="200" height="300" />
                         </picture>
                 </div>

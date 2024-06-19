@@ -19,7 +19,7 @@ function Home() {
                         <h1>Cintamex</h1>
                         <h2>¡Pega al ritmo de México!</h2>
                         <p>
-                            Cintamex es una empresa 100 % mexicana que se especializa en
+                            Cintamex es una empresa 100% mexicana que se especializa en
                             la distribución de productos de empaque. Su principal
                             fortaleza es el servicio al cliente, ofreciendo productos de
                             calidad certificada al mejor precio del mercado y

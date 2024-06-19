@@ -25,8 +25,8 @@ function About() {
                             className={`${styles.photo} ${styles["image-1"]}`}
                         >
                             <picture>
-                                <source srcset="/img/7.avif" type="image/avif" />
-                                <source srcset="/img/7.webp" type="image/webp" />
+                                <source srcSet="/img/7.avif" type="image/avif" />
+                                <source srcSet="/img/7.webp" type="image/webp" />
                                 <img src="/img/7.png" alt="Cinta Cintamex" loading="lazy" width="200" height="300" />
                             </picture>
                         </div>
@@ -51,8 +51,8 @@ function About() {
                             className={`${styles.photo} ${styles["image-2"]}`}
                         >
                             <picture>
-                                <source srcset="/img/4.avif" type="image/avif" />
-                                <source srcset="/img/4.webp" type="image/webp" />
+                                <source srcSet="/img/4.avif" type="image/avif" />
+                                <source srcSet="/img/4.webp" type="image/webp" />
                                 <img src="/img/4.png" alt="Cinta Ejemplo" loading="lazy" width="200" height="300" />
                             </picture>
                         </div>
@@ -76,8 +76,8 @@ function About() {
                             className={`${styles.photo} ${styles["image-3"]}`}
                         >
                             <picture>
-                                <source srcset="/img/6.avif" type="image/avif" />
-                                <source srcset="/img/6.webp" type="image/webp" />
+                                <source srcSet="/img/6.avif" type="image/avif" />
+                                <source srcSet="/img/6.webp" type="image/webp" />
                                 <img src="/img/6.png" alt="Cinta Ejemplo" loading="lazy" width="200" height="300" />
                             </picture>
                         </div>

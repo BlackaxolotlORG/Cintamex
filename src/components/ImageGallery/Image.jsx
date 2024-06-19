@@ -38,8 +38,8 @@ const Image = ({image}) => {
             className={`${styles.image} ${isVisible ? styles.animate : ""}`}
         >
             <picture>
-                <source srcset={`/img/${image.image}.avif`} type="image/avif" />
-                <source srcset={`/img/${image.image}.webp`} type="image/webp" />
+                <source srcSet={`/img/${image.image}.avif`} type="image/avif" />
+                <source srcSet={`/img/${image.image}.webp`} type="image/webp" />
                 <img src={`/img/${image.image}.png`} alt={image.alt} loading="lazy" width="200" height="300" />
             </picture>
         </div>

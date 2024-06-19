@@ -50,8 +50,8 @@ const Product = ({ product }) => {
         >
             <div className={styles.image}>
                 <picture>
-                    <source srcset={`/img/${image}.avif`} type="image/avif" />
-                    <source srcset={`/img/${image}.webp`} type="image/webp" />
+                    <source srcSet={`/img/${image}.avif`} type="image/avif" />
+                    <source srcSet={`/img/${image}.webp`} type="image/webp" />
                     <img src={`/img/${image}.png`} alt={`Product ${name}`} loading="lazy" width="200" height="300" />
                 </picture>
             </div>

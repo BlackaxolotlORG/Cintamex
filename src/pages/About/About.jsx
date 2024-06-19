@@ -22,7 +22,7 @@ function About() {
                     <div className={styles["square-right"]}></div>
                     <div className={styles.infogrid}>
                         <div
-                            className={`${styles.photo} ${styles["down-effect"]}`}
+                            className={`${styles.photo} ${styles["image-1"]}`}
                         >
                             <img
                                 src="../../src/assets/7.png"
@@ -30,7 +30,7 @@ function About() {
                             />
                         </div>
                         <div
-                            className={`${styles.infobox} ${styles["up-effect"]}`}
+                            className={`${styles.infobox} ${styles.mission}`}
                         >
                             <h2>Nuestra Misión</h2>
                             <p>
@@ -47,7 +47,7 @@ function About() {
                             </p>
                         </div>
                         <div
-                            className={`${styles.photo} ${styles["down-effect"]}`}
+                            className={`${styles.photo} ${styles["image-2"]}`}
                         >
                             <img
                                 src="../../src/assets/4.jpg"
@@ -55,7 +55,7 @@ function About() {
                             />
                         </div>
                         <div
-                            className={`${styles.infobox} ${styles["down-effect"]}`}
+                            className={`${styles.infobox} ${styles.vision}`}
                         >
                             <h2>Nuestra Visión</h2>
                             <p>
@@ -71,7 +71,7 @@ function About() {
                             </p>
                         </div>
                         <div
-                            className={`${styles.photo} ${styles["up-effect"]}`}
+                            className={`${styles.photo} ${styles["image-3"]}`}
                         >
                             <img
                                 src="../../src/assets/6.png"
@@ -79,7 +79,7 @@ function About() {
                             />
                         </div>
                         <div
-                            className={`${styles.infobox} ${styles["down-effect"]}`}
+                            className={`${styles.infobox} ${styles.values}`}
                         >
                             <h2>Nuestros Valores</h2>
                             <p>

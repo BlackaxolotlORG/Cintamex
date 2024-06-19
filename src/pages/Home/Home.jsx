@@ -16,7 +16,8 @@ function Home() {
             <header className={styles.header}>
                 <div className={styles.info}>
                     <div className={styles.text}>
-                        <h1>Cintamex, ¡Pega al ritmo de México!</h1>
+                        <h1>Cintamex</h1>
+                        <h2>¡Pega al ritmo de México!</h2>
                         <p>
                             Cintamex es una empresa 100 % mexicana que se especializa en
                             la distribución de productos de empaque. Su principal
@@ -42,12 +43,6 @@ function Home() {
                 <div className={styles.newproducts}>
                   {newProducts.map((product, i) => (
                       <Product key={i} product={product} />
-                      // <div className={styles.newproduct}>
-                      //     <h3>Titulo</h3>
-                      //     <img></img>
-                      //     Hello
-                      //     <button className={styles.view}>View</button>
-                      // </div>
                   ))}
                 </div>
             </div>

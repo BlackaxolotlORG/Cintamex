@@ -23,21 +23,21 @@ function Contact() {
                         <div className={styles.icon}>
                             <i className="fa-solid fa-phone"></i>
                         </div>
-                        <h2>Telefono</h2>
-                        <p>+52 55 8556 7960</p>
+                        <h2>Teléfono</h2>
+                        <p>+52 55 8556 7950</p>
                     </div>
 
-                    <div className={styles.column}>
+                    <div className={`${styles.column} ${styles.mail}`}>
                         <div className={styles.icon}>
                             <i className="fa-solid fa-envelope"></i>
                         </div>
                         <h2>Mail</h2>
-                        <p>eduardoreznik@cintamex.com.mx</p>
+                        <p>info@cintamex.com.mx</p>
                     </div>
                 </div>
             </div>
             <div className={styles.background}>
-                <h2 className={styles.HeadContact}>Mandanos Un Mensaje</h2>
+                <h2 className={styles.HeadContact}>Mándanos Un Mensaje</h2>
                 <div className={styles.formcontent}>
                     <div className={styles.map}>
                         <iframe

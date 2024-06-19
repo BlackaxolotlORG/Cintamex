@@ -1,17 +1,16 @@
 .background{
     background: linear-gradient(135deg, #ece9e6, #ffffff);
-    padding: 5rem 0;
-    padding-top: 11.8rem;
+    padding: 11.8rem 0;
+    /* padding-top: ; */
     position: relative;
 }
 .square-right-global,
 .square-left-global{
     background: var(--aqua);
-    width: 30rem;
-    height: 30rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 0;
+    display: none;
 }
 .square-left-global{
     border-radius: 0 2rem 2rem 0;
@@ -23,6 +22,21 @@
     right: 0;
     top: -7rem;
 }
+@media (min-width: 768px) {
+    .square-right-global,
+    .square-left-global {
+        display: block;
+        width: 15rem;
+        height: 25rem;
+    }
+}
+@media (min-width: 1024px) {
+    .square-right-global,
+    .square-left-global {
+        width: 30rem;
+        height: 30rem;
+    }
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -30,6 +44,7 @@
     justify-content: center;
     color: #333;
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto;
 }
 .squares{
@@ -38,11 +53,10 @@
 .square-right,
 .square-left{
     background: var(--aqua);
-    width: 30rem;
-    height: 70rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 0;
+    display: none;
 }
 .square-left{
     border-radius: 0 2rem 2rem 0;
@@ -53,6 +67,21 @@
     border-radius: 2rem 0 0 2rem;
     right: 0;
     bottom: -7rem;
+}
+@media (min-width: 768px) {
+    .square-right,
+    .square-left{
+        display: block;
+        width: 15rem;
+        height: 70rem;
+    }
+}
+@media (min-width: 1024px) {
+    .square-right,
+    .square-left{
+        width: 30rem;
+        height: 70rem;
+    }
 }
 .heading {
     font-size: 4rem;
@@ -74,23 +103,57 @@
 .mainparagraph p,
 .paragraph p{
     max-width: 80rem;
+    width: 95%;
     margin: 0 auto;
 }
 .mainparagraph{
-    margin: 4rem auto 8rem auto;
+    margin: 4rem auto;
 }
 .paragraph{
-    margin: 8rem auto 4rem auto;
+    margin: 4rem auto;
+}
+@media (min-width: 768px) {
+    .mainparagraph{
+        margin: 4rem auto 8rem auto;
+    }
+    .paragraph{
+        margin: 8rem auto 4rem auto;
+    }    
 }
 .infogrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    "mission"
+                            "image1"
+                            "vision"
+                            "image2"
+                            "values"
+                            "image3";
     gap: 3rem;
+}
+@media (min-width: 768px) {
+    .infogrid{
+        grid-template-areas:    "mission image1"
+                                "image2 vision"
+                                "values image3";
+    }
+}
+@media (min-width: 1024px) {
+    .infogrid{
+        grid-template-areas:    "image1 mission image2"
+                                "vision image3 values";
+    }
 }
 .infogrid div{
     border-radius: 1rem;
-    height: 40rem;
+    max-height: 50rem;
 }
+@media (min-width: 768px) {
+    .infogrid div{
+        max-height: unset;
+        height: 40rem;
+    }
+}
+
 .infobox {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -119,18 +182,76 @@
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
 }
-.up-effect{
-    margin-top: -3rem;
+.vision{
+    grid-area: vision;
 }
-.down-effect{
-    margin-top: 3rem;
+.mission{
+    grid-area: mission;
 }
-.photo {
+.values{
+    grid-area: values;
+}
+.image-1{
+    grid-area: image1;
+}
+.image-2{
+    grid-area: image2;
+}
+.image-3{
+    grid-area: image3;
+}
+@media (min-width: 768px) {
+    .vision{
+        margin-top: 3rem;
+    }
+    .mission{
+        margin-top: -3rem;
+    }
+    .values{
+        margin-top: -3rem;
+    }
+    .image-1{
+        margin-top: 3rem;
+    }
+    .image-2{
+        margin-top: -3rem;
+    }
+    .image-3{
+        margin-top: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .vision{
+        margin-top: 3rem;
+    }
+    .mission{
+        margin-top: -3rem;
+    }
+    .values{
+        margin-top: 3rem;
+    }
+    .image-1{
+        margin-top: 3rem;
+    }
+    .image-2{
+        margin-top: 3rem;
+    }
+    .image-3{
+        margin-top: -3rem;
+    }
+}
+div.photo {
     background: #ddd;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 10;
+    max-height: 20rem;
+}
+@media (min-width: 768px) {
+    div.photo {
+        max-height: unset;
+    }
 }
 .photo img {
     width: 100%;

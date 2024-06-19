@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     max-width: 120rem;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
     gap: 3rem;

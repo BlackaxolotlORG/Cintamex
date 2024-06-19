@@ -7,6 +7,7 @@ const Navbar = () => {
     const location = useLocation();
     const [scrolled, setScrolled] = useState(false);
     const [lastScroll, setLastScroll] = useState(0);
+    const [showMenu, setShowMenu] = useState(false);
 
 
     useEffect(() => {
@@ -31,16 +32,26 @@ const Navbar = () => {
             top: 0,
             behavior: "smooth",
         });
+        setShowMenu(false);
     };
 
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    } 
+
     return (
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${showMenu ? styles["menu-active"] : ''}`}>
             <div className={styles.logonav}>
-                <Link className={styles.navlink} to="/" onClick={scrollToTop}>
-                    <img src={Logo} alt="Logo" />
-                </Link>
+                <div className={styles.logo}>
+                    <Link className={styles.navlink} to="/" onClick={scrollToTop}>
+                        <img src={Logo} alt="Logo" />
+                    </Link>
+                </div>
+                <div className={styles.menu} onClick={toggleMenu}>
+                    <i className="fas fa-bars"></i>
+                </div>
             </div>
-            <ul className={styles.navList}>
+            <ul className={`${styles.navList}`}>
                 <Link
                     className={`${styles.navlink} ${
                         location.pathname === "/" ? styles.active : ""

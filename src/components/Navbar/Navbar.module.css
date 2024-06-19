@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 5rem;
   background-color: var(--dark-aqua);
@@ -8,12 +9,27 @@
   width: 100%;
   top: 0;
   left: 0;
-  max-height: auto;
-  padding: 0 4rem;
+  height: 6.88rem;
+  padding: 0 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   transition: 0.3s ease-in;
-  transition-property: padding-top, padding-bottom;
+  transition-property: padding-top, padding-bottom, max-height, height;
+  overflow: hidden;
+}
+.menu-active.navbar {
+  transition: .3s ease-in;
+  transition-property: max-height, height;
+  max-height: 100vh;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .navbar{
+    flex-direction: row;
+    padding: 0 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 .scrolled{
   max-height: 0;
@@ -27,10 +43,31 @@
 
 .navList {
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 3rem;
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  font-size: 2rem;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transition-property: opacity;
+}
+.menu-active .navList {
+  transition: 0.3s ease-in;
+  transition-property: opacity;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .navList {
+    display: flex;
+    opacity: 1;
+    flex-direction: row;
+    width: auto;
+    gap: 5rem;
+    font-size: 1.8rem;
+  }
 }
 
 .navlink {
@@ -41,13 +78,31 @@
 .logonav {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
   width: 12rem;
 }
-
-.logonav img {
+.logo img {
   height: auto;
   width: 100%;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(280deg) brightness(101%) contrast(105%);
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .menu{
+    display: none;
+  }
+}
+.menu i{
+  color: var(--white);
+  font-size: 3.5rem; 
 }
 .active {
   color: var(--aqua);

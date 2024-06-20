@@ -99,6 +99,8 @@
     /* background-color: var(--aqua);
     color: var(--white);
     padding: 4rem 0; */
+    opacity: 0;
+    transform: translateY(2rem);
 }
 .mainparagraph p,
 .paragraph p{
@@ -146,6 +148,8 @@
 .infogrid div{
     border-radius: 1rem;
     max-height: 50rem;
+    opacity: 0;
+    transform: translateY(2rem);
 }
 @media (min-width: 768px) {
     .infogrid div{
@@ -273,4 +277,9 @@ div.photo {
 
 .cintalogo {
     color: rebeccapurple;
+}
+div.animate{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
 }

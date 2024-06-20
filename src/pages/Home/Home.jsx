@@ -1,4 +1,4 @@
-import { React } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./Home.module.css";
@@ -10,12 +10,45 @@ import Image from "../../components/ImageGallery/Image";
 import { products, galery } from "../../data/data";
 
 function Home() {
-  const newProducts = products.slice(0, 3);
+    const newProducts = products.slice(0, 3);
+
+    const [isVisible, setIsVisible] = useState(false);
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(elementRef.current); // Deja de observar una vez que es visible
+                }
+            },
+            {
+                threshold: 0.1,
+                root: null, // `null` significa que se utiliza el viewport del navegador como root
+                rootMargin: "0px 0px -250px 0px",
+            }
+        );
+
+        if (elementRef.current) {
+            observer.observe(elementRef.current);
+        }
+
+        return () => {
+            if (elementRef.current) {
+                observer.unobserve(elementRef.current);
+            }
+        };
+    }, []);
+    
     return (
         <div className={styles.homepage}>
             <header className={styles.header}>
                 <div className={styles.info}>
-                    <div className={styles.text}>
+                    <div 
+                        className={`${styles.text} ${isVisible ? styles.animate : ""}`} 
+                        ref={elementRef}
+                    >
                         <h1>Cintamex</h1>
                         <h2>¡Pega al ritmo de México!</h2>
                         <p>

@@ -68,15 +68,22 @@ function Home() {
                 </div>
             </header>
             <div className={styles.newCollection}>
-                <h2>Nuevos Productos</h2>
+                <h2>Nuestros Productos</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    ullamcorper eros eget tincidunt ultrices.
+                    Descubre nuestras nuevas cintas y pega al ritmo de México
                 </p>
                 <div className={styles.newproducts}>
                   {newProducts.map((product, i) => (
                       <Product key={i} product={product} />
                   ))}
+                </div>
+                <div className={styles.view}>
+                    <Link 
+                        className={styles.shopNowBtn}
+                        to="/products"
+                    >
+                        Ver más
+                    </Link>
                 </div>
             </div>
             <Download />

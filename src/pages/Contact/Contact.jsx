@@ -146,8 +146,7 @@ function Contact() {
                     <form 
                         className={`${styles.contactform} ${isVisibleMap ? styles.animate : ""}`} 
                         ref={elementRefMap}
-                        // action="https://formsubmit.co/info@cintamex.com.mx"
-                        action="https://formsubmit.co/rennkryptor@gmail.com"
+                        action="https://formsubmit.co/info@cintamex.com.mx"
                         method="POST"
                         onSubmit={formSending}
                     >

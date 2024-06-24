@@ -5,7 +5,7 @@
 
 .header {
   position: relative;
-  padding: 10rem 3rem;
+  padding: 10rem 0;
 
   background-image: url('/img/fondo.webp');
   
@@ -45,9 +45,16 @@
 
 .info{
   max-width: 120rem;
+  width: 90%;
   margin: 0 auto;
   text-align: left;
   color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .info{
+    width: auto;
+  }
 }
 
 .text{

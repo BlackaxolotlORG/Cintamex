@@ -7,6 +7,7 @@ const SocialMedia = ({footer}) => {
                 href="https://www.linkedin.com/in/eduardo-reznik-0941a2170/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Revisa nuestro LinkedIn"
             >
                 <i className="fa-brands fa-linkedin"></i>
             </a>
@@ -15,6 +16,7 @@ const SocialMedia = ({footer}) => {
                 href="https://wa.me/525585567950"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Contáctanos vía WhatsApp"
             >
                 <i className="fa-brands fa-square-whatsapp"></i>
             </a>
@@ -23,6 +25,7 @@ const SocialMedia = ({footer}) => {
                 href="https://www.instagram.com/empaques.cintamex/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Revisa nuestro Instagram"
             >
                 <i className="fa-brands fa-square-instagram"></i>
             </a>

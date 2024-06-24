@@ -57,7 +57,7 @@ const Product = ({ product }) => {
             </div>
             <div className={styles.description}>
                 <div className={styles.info}>
-                    <h3>{name}</h3>
+                    <h2>{name}</h2>
                     {description && (
                         <p className={styles["description-p"]}>
                             <span>{description}</span>

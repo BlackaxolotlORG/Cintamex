@@ -75,12 +75,12 @@
     z-index: 2;
     /* object-fit: cover; */
 }
-.product h3{
+.product h2{
     font-size: 1.2rem;
     margin: 0;
     text-align: left;
     text-transform: uppercase;
-    color: var(--aqua);
+    color: color-mix(in srgb, var(--aqua) 55%, #000);
     width: 100%;
     font-weight: bold;
     margin-bottom: .5rem;

@@ -24,18 +24,26 @@ const Footer = () => {
                 <div className={styles.footerSection}>
                     <h3>Menú</h3>
                     <ul>
-                        <Link className={styles.navlinkfoot} to="/" onClick={scrollToTop}>
-                            <li>Inicio</li>
-                        </Link>
-                        <Link className={styles.navlinkfoot} to="/about" onClick={scrollToTop}>
-                            <li>Nosotros</li>
-                        </Link>
-                        <Link className={styles.navlinkfoot} to="/products" onClick={scrollToTop}>
-                            <li>Productos</li>
-                        </Link>
-                        <Link className={styles.navlinkfoot} to="/contact" onClick={scrollToTop}>
-                            <li>Contacto</li>
-                        </Link>
+                        <li>
+                            <Link className={styles.navlinkfoot} to="/" onClick={scrollToTop}>
+                                Inicio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={styles.navlinkfoot} to="/about" onClick={scrollToTop}>
+                                Nosotros
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={styles.navlinkfoot} to="/products" onClick={scrollToTop}>
+                                Productos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={styles.navlinkfoot} to="/contact" onClick={scrollToTop}>
+                                Contacto
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.footerSection}>

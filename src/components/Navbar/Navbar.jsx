@@ -55,42 +55,50 @@ const Navbar = () => {
                 </div>
             </div>
             <ul className={`${styles.navList}`}>
-                <Link
-                    className={`${styles.navlink} ${
-                        location.pathname === "/" ? styles.active : ""
-                    }`}
-                    to="/"
-                    onClick={scrollToTop}
-                >
-                    <li>Inicio</li>
-                </Link>
-                <Link
-                    className={`${styles.navlink} ${
-                        location.pathname === "/about" ? styles.active : ""
-                    }`}
-                    to="/about"
-                    onClick={scrollToTop}
-                >
-                    <li>Nosotros</li>
-                </Link>
-                <Link
-                    className={`${styles.navlink} ${
-                        location.pathname === "/products" ? styles.active : ""
-                    }`}
-                    to="/products"
-                    onClick={scrollToTop}
-                >
-                    <li>Productos</li>
-                </Link>
-                <Link
-                    className={`${styles.navlink} ${
-                        location.pathname === "/contact" ? styles.active : ""
-                    }`}
-                    to="/contact"
-                    onClick={scrollToTop}
-                >
-                    <li>Contacto</li>
-                </Link>
+                <li>
+                    <Link
+                        className={`${styles.navlink} ${
+                            location.pathname === "/" ? styles.active : ""
+                        }`}
+                        to="/"
+                        onClick={scrollToTop}
+                    >
+                        Inicio
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={`${styles.navlink} ${
+                            location.pathname === "/about" ? styles.active : ""
+                        }`}
+                        to="/about"
+                        onClick={scrollToTop}
+                    >
+                        Nosotros
+                    </Link> 
+                </li>
+                <li>
+                    <Link
+                        className={`${styles.navlink} ${
+                            location.pathname === "/products" ? styles.active : ""
+                        }`}
+                        to="/products"
+                        onClick={scrollToTop}
+                    >
+                    Productos
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={`${styles.navlink} ${
+                            location.pathname === "/contact" ? styles.active : ""
+                        }`}
+                        to="/contact"
+                        onClick={scrollToTop}
+                    >
+                        Contacto
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

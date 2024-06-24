@@ -138,6 +138,9 @@
   color: #333;
   margin-bottom: 20px;
 }
+.newCollection p{
+  width: 90%;
+}
 
 .newproducts {
   display: grid;

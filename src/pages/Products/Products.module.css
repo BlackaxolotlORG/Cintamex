@@ -70,6 +70,7 @@
 .image img{
     /* height: 100%; */
     width: 70%;
+    max-width: 23rem;
     position: relative;
     z-index: 2;
     /* object-fit: cover; */

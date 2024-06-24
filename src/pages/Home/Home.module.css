@@ -111,7 +111,6 @@
     line-height: 1.6;
   }
 }
-
 .shopNowBtn {
   background-color: #2FB2AF;
   color: white;
@@ -121,9 +120,10 @@
   border-radius: 5px;
   transition: background-color 0.2s ease;
   margin: 1rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.view .shopNowBtn {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
 .shopNowBtn:hover {
   background-color: var(--dark-aqua);
   cursor: pointer;

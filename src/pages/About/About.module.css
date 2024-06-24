@@ -123,26 +123,31 @@
     }    
 }
 .infogrid {
-    display: grid;
-    grid-template-areas:    "mission"
-                            "image1"
-                            "vision"
-                            "image2"
-                            "values"
-                            "image3";
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 @media (min-width: 768px) {
     .infogrid{
+        display: grid;
         grid-template-areas:    "mission image1"
                                 "image2 vision"
                                 "values image3";
+        gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+    
 }
 @media (min-width: 1024px) {
     .infogrid{
         grid-template-areas:    "image1 mission image2"
                                 "vision image3 values";
+        /* grid-template-columns: 3fr; */
+        grid-template-columns: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 .infogrid div{
@@ -150,10 +155,12 @@
     max-height: 50rem;
     opacity: 0;
     transform: translateY(2rem);
+    width: 100%;
 }
 @media (min-width: 768px) {
     .infogrid div{
         max-height: unset;
+        width: auto;
         height: 40rem;
     }
 }

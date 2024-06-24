@@ -140,6 +140,8 @@
 }
 .newCollection p{
   width: 90%;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 .newproducts {

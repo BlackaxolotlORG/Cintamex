@@ -21,3 +21,8 @@
     font-size: 3rem;
     color: var(--white);
 }
+
+.socialMedia.footer i:hover {
+    font-size: 3rem;
+    color: var(--aqua);
+}

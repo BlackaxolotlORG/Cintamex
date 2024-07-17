@@ -152,8 +152,8 @@ const products = [
     },
     {
         image: "sin_fondo/Personalizado",
-        name: "Playo",
-        description: "personalizada en trasparente canela o cualquiero fondo color"
+        name: "Cinta",
+        description: "Personalizada en trasparente canela o cualquiero fondo color"
     },
 
     // Añade más productos aquí

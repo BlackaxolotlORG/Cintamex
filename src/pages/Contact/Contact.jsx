@@ -90,11 +90,17 @@ function Contact() {
                         <div className={styles.icon}>
                             <i className="fa-solid fa-location-dot"></i>
                         </div>
+                        <a className={styles.contactbut }
+                        href="https://maps.app.goo.gl/fhj1Unc4bfZC38316"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <h2>Ubicacion</h2>
                         <p>
                             Calle Los Remedios num.11 Col. San Luis Tlatilco
                             Naucalpan de Juarez 53630
                         </p>
+                        </a>
                     </div>
 
                     <div
@@ -102,12 +108,15 @@ function Contact() {
                             isVisible ? styles.animate : ""
                         }`}
                         ref={elementRef}
+                        
                     >
                         <div className={styles.icon}>
                             <i className="fa-solid fa-phone"></i>
                         </div>
+                        <a className={styles.contactbut } href="tel:+525543903252">
                         <h2>Teléfono</h2>
                         <p>+52 55 8556 7950</p>
+                     </a>
                     </div>
 
                     <div
@@ -119,8 +128,10 @@ function Contact() {
                         <div className={styles.icon}>
                             <i className="fa-solid fa-envelope"></i>
                         </div>
+                        <a  className={styles.contactbut } href="mailto:info@cintamex.com.mx">
                         <h2>Mail</h2>
                         <p>info@cintamex.com.mx</p>
+                        </a>
                     </div>
                 </div>
             </div>

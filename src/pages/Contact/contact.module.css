@@ -78,6 +78,13 @@
   font-size: 1.6rem;
   max-width: 30rem;
 }
+.column:hover p,
+.column:hover h2,
+.column:hover  i
+{
+  color: var(--aqua);
+}
+
 
 
 .background {
@@ -165,4 +172,9 @@
 .loading{
   opacity: .5;
   cursor: wait;
+}
+
+.contactbut{
+  text-decoration: none;
+  color: white;
 }
